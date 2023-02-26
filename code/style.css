@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap');
+/* ######################## CHANGEMENT POLICE ######################## */
+
+
+/* ######################## BODY / HEADER ######################## */
+/* ######################################################################## */
+
+main > section:not(#section1){
+	opacity:0;
+	position: relative;
+	top:50px;
+	transition: all 1s;
+}
+
+body{
+    height: 100%;  
+    margin : 0;                     /* Suppression des marges internes */               
+}
+
+#site-header {
+	padding: 1rem 0;
+	/* position: fixed; */
+	width: 100%;
+	z-index: 10;                     
+}
+
+#site-header .sticky{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sticky{
+	opacity: 3;
+	background-color: black;
+}
+
+#spoty{
+	padding-left: 5px;
+	width: 150px;
+	height: 50px;
+}
+
+/* #spoty a{
+	/* display: inline-block; */
+	/* background: url('images/spotify_logo.svg'); 
+} */
+
+.paprika{
+	display: inline-block;
+	background-image: url("images/logo.svg"); 
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+}
+.paprika:hover{
+	display: inline-block;
+	background-image: url("images/spotify_logo.svg");
+	background-size: contain; 
+	background-repeat: no-repeat;
+    width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+#spoty {
+	display: inline-block;
+}
+
+
+
+header nav ul{
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+header nav li a{
+	display: block;
+	padding: 0.5em;
+	color: white;
+	text-decoration: none;
+}
+
+header a, header img{
+	width:"140px";
+}
+
+header .container {
+    display : flex;
+    justify-content : space-between;    /* Répartitions des espaces entre les éléments*/
+    align-items : center;                   /* Centrer */
+}
+
+.menu {
+    display: flex;              /* Transformation en flexbox */
+    list-style-type: none ;       /* Suppression des puces */
+    /* margin: 0;                   /* Marge interne */
+    padding: 0;                      /* Ecarts de remplissage */
+    float: right;                    /* Flottant à droite */
+    color:white;
+}
+
+/* ######################## SECTION 1 #################################### */
+/* ######################################################################## */
+
+#section1 .cta-button{
+	animation: fadeIn 1s;
+}
+
+#section1{
+    height: 640px;
+    padding-bottom: 20px;
+    color: white;
+    background-image: url('images/hero-image.jpg');
+    background-size: cover;
+    background-position: right center; 
+    background-color : orangered;
+    padding: 20px;
+    display:flex;
+    padding-bottom: 20px;
+
+}
+
+#section1 .container{
+    display : flex;                     /*  spécifier un facteur d'agrandissement ou de réduction de la taille */
+    flex-direction : column;            /*    en fonction de l'espace disponnible dans leur conteneur */      
+    height: 100%;                       
+}                               
+
+#section1 .container div {
+    align-items: flex-start;
+    display : flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#section1 footer {
+    text-align : center;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+#section1  h1 {
+    font-size: 50px;
+}
+
+/* ######################## CTA BOUTTON #################################### */
+/* ######################################################################## */
+
+button{ 
+	border: none;
+	cursor: pointer;
+}
+
+.cta-button{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-block;
+	padding: 1em 3em;
+	background-color: grey;
+	letter-spacing: 0.1em;
+	border-radius: 1000px;
+	transition: all 0.3s;
+	border: solid thin grey;
+	text-align: center;
+}
+
+.cta-button:hover{
+	background-color: lightgrey;
+}
+
+.cta-button--blue{
+	background-color: var(--blue);
+	border-color: var(--blue);
+}
+
+.cta-button--blue:hover{
+	background-color: var(--blue-hover);
+	border-color: var(--blue-hover);
+}
+
+.cta-button--white{
+	background-color: white;
+	border-color: var(--green);
+	color: var(--green);
+}
+
+.cta-button--white:hover{
+	background-color: var(--green-hover);
+	color: white;
+}
+
+.cta-button--green{
+	background-color: var(--green);
+	border-color: var(--green);
+}
+
+.cta-button--green:hover{
+	background-color: var(--green-hover);
+	border-color: var(--green-hover);
+}
+
+/* ######################## SECTION 2 #################################### */
+/* ######################################################################## */
+#section2{
+    background-color : whitesmoke;
+    padding: 40px 0;
+}
+
+#section2 div{
+    display: flex;
+}
+
+.benefit{
+	padding: 30px;
+	width: 25%;
+	text-align: center;
+}
+
+#section2 .container >h1{
+    text-align: center;
+    font-size: 48px;
+}
+
+#section2 .container{
+    flex-direction: column;
+    display : flex;                     /*  spécifier un facteur d'agrandissement ou de réduction de la taille */
+}  
+
+#section2 .container{
+    display: flex;
+}
+
+/* ######################## SECTION 3 #################################### */
+/* ######################################################################## */
+
+#section3{
+    background-color : whitesmoke;         
+}
+
+#section3 .container{
+	flex-direction: column;
+    display : flex;                     /*  spécifier un facteur d'agrandissement ou de réduction de la taille */
+          
+}  
+
+#section3 .container > h1{
+	text-align: center;
+	font-size: 30px;
+}
+
+#benefitLogo{
+    width: 220px;
+}
+
+.offers-container{
+	width: 70%;
+	margin: 20px auto 30px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* espacement de la liste dans .offer */
+.offers-container ul li{
+	margin-bottom: 1em;                      
+}
+
+.offers-container ul li:last-child{
+	margin-bottom: 0;
+}
+
+.offers-container ul {
+	list-style-image: url('images/checklist.svg');
+    padding: 30px 0 30px 30px;
+    border-top: solid thin lightgrey;
+	border-bottom: solid thin lightgrey;
+}
+
+.offer{
+	width: 48%;
+	background-color: white;
+	padding: 30px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	position: relative;
+	top: 0;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.offer:hover{
+	top: -10px;
+	box-shadow: 0 0 24px rgba(0,0,0,0.2);
+}
+
+#free{
+    opacity:0.5;
+}
+
+#section3 .container > footer{
+	text-align: center;
+}
+
+/* ######################## AUTRES #################################### */
+/* ######################################################################## */
+
+.container{
+    max-width : 1450px;
+    margin: auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+	--blue: #1E3264;
+	--blue-hover: #2A468D;
+	--green: #1DB954;
+	--green-hover: #1ED760;
+	--red: #f5232e;
+}
+
+body{
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+    background-color : orangered;
+}
+
+a {
+    color: currentColor;
+    text-decoration : none;                     /* Annule le soulignage*/
+}
+
+ul {
+    float : right;
+}
+
+.clearfix {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+  /* ######################## FOOTER BODY #################################### */
+/* ######################################################################## */
+
+body > footer{
+	padding: 1rem 0;
+	background-color: black;
+	color: white;
+	font-size: 12px;
+}
+
+body > footer .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body > footer ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+
+body > footer li a{
+	padding: 0.5em;
+	display: block;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 1000px){
+	#menu-button{
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 1000px){
+
+
+	.container{
+		padding: 0 30px;
+		display: flex;
+
+	}
+
+	div{
+		display: flex;
+	}
+
+	header nav{
+		position: absolute;
+		top: 0;
+		left: 100%;
+		width: 100vw;
+		height: 100vh;
+		background-color: var(--blue);
+		color: white;
+		transition: left 1s;
+	}
+
+	header nav.open{
+		left: 0;
+	}
+
+	header nav ul{
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#menu-button{
+		display: inline-block;
+		background-color : orangered;
+	}
+
+	#menu-button::before{
+		content: '';
+		display: inline-block;
+		width: 2rem;
+		height: 2rem;
+		background-color : orangered;
+		background-image: url('images/menu.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	#section1 h1{
+		font-size: 40px;
+	}
+
+	#section2 .container div{
+		flex-direction: column;
+		display: flex;
+	}
+
+	.benefit{
+		padding: 30px;
+		width: 100%;
+		text-align: center;
+	}
+
+	#section3 .container div{
+		flex-direction: column;
+		display: flex;
+	}
+
+	#site-nav{
+		display:flex;
+		text-align: center;
+		justify-content: center;
+		
+	}
+
+	.offer{
+		width:100%;
+	}
+
+	.offers-container{
+		width: 100%;
