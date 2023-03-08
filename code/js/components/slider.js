@@ -6,7 +6,7 @@ $(document).ready(function(){
     }
 })
 
-function test(slider){
+function testTEST(slider){
     let container = $('<div/>')
     .addClass('slides-container')
     .html(slider.html());
