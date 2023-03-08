@@ -1,0 +1,33 @@
+# Ignore les fichiers de configuration système
+.idea/
+.vscode/
+.DS_Store
+
+# Ignore les fichiers de dépendances
+node_modules/
+
+# Ignore les fichiers de build
+dist/
+build/
+
+# Ignore les fichiers de cache et de sauvegarde
+*.log
+*.backup
+*.tmp
+*.swp
+
+# Ignore les fichiers de compilation SASS
+*.css.map
+
+# Ignore les fichiers générés JS
+*.js.map
+
+# Ignore les fichiers de sauvegarde de l'éditeur
+*~
+.#*
+
+# Ignore les fichiers de compilation CSS
+*.css
+
+# Ignore les fichiers de compilation JS
+*.js
