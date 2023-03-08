@@ -6,7 +6,7 @@ $(document).ready(function(){
     }
 })
 
-function sliderInit(slider){
+function test(slider){
     let container = $('<div/>')
     .addClass('slides-container')
     .html(slider.html());
